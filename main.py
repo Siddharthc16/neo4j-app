@@ -79,7 +79,7 @@ qa_prompt = PromptTemplate(
 
 def query_graph(user_input):
     graph = Neo4jGraph(url=neo4j_url, username=neo4j_user,
-                       password=neo4j_password)
+                       password=neo4j_password,enhanced_schema=True)
     # chain = GraphCypherQAChain.from_llm(
     #     ChatOpenAI(temperature=0, api_key=os.getenv("api_key")), 
     #     return_intermediate_steps=True,

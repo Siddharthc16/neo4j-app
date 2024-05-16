@@ -17,7 +17,7 @@ dotenv.load_dotenv()
 
 # OpenAI API configuration
 llm = ChatOpenAI(
-    model="gpt-4",
+    model="gpt-4o",
     # openai_api_base = os.getenv("OPENAI_API_BASE"),
     # openai_api_version = os.getenv("OPENAI_API_VERSION"),
     api_key=os.getenv("api_key"),
